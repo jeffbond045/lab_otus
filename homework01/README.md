@@ -110,7 +110,7 @@
 <summary><b>Схема сети (Москва)</b></summary>
 <br>
 
-[![Схема сети Москва](homework01/pods_img/screen_msk.png)])
+[![Схема сети Москва](./homework01/pods_img/screen_msk.png)]
 
 </details>
 
