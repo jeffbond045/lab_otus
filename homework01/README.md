@@ -186,7 +186,7 @@
 <summary><b>Схема сети (Санкт-Петербург)</b></summary>
 <br>
 
-[![Схема сети Москва](./pods_img/screen_ызи.png)]
+[![Схема сети Санкт-Петербург](./pods_img/screen_spb.png)]
 
 </details>
 
