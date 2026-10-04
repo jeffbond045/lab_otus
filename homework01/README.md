@@ -335,7 +335,7 @@
 <summary><b>Схема сети (Общая)</b></summary>
 <br>
 
-[![Общая схема сети](./homework01/topology_finalest.svg)]
+[![Общая схема сети](./topology_finalest.svg)]
 
 </details>
 
