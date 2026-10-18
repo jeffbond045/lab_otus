@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1500" viewBox="0 0 1600 1500"><defs><style>text{font-family:DejaVu Sans,sans-serif;fill:#162a43}.muted{fill:#62738a}.mono{font-family:DejaVu Sans Mono,monospace}</style></defs>
+<rect x="0" y="0" width="1600" height="1500" rx="0" fill="#f8fafc" stroke="none" stroke-width="2"/>
+<text x="55" y="65" font-size="38" style="fill:#162a43" text-anchor="start" font-weight="700">МОСКВА · OSPFv2</text>
+<text x="55" y="102" font-size="21" style="fill:#62738a" text-anchor="start" font-weight="400">Области, адресация и фильтрация межобластных маршрутов</text>
+<text x="1545" y="64" font-size="20" style="fill:#62738a" text-anchor="end" font-weight="400">18.10.2026</text>
+<text x="1545" y="96" font-size="19" style="fill:#62738a" text-anchor="end" font-weight="400">IPv4 · процесс 1</text>
+<rect x="390" y="136" width="220" height="54" rx="10" fill="#ffffff" stroke="#a9b5c4" stroke-width="2"/>
+<text x="500" y="170" font-size="22" style="fill:#64748b" text-anchor="middle" font-weight="700">R22 · Киторн</text>
+<rect x="990" y="136" width="220" height="54" rx="10" fill="#ffffff" stroke="#a9b5c4" stroke-width="2"/>
+<text x="1100" y="170" font-size="22" style="fill:#64748b" text-anchor="middle" font-weight="700">R21 · Ламас</text>
+<polyline points="500,190 500,280" fill="none" stroke="#98a5b5" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="1100,190 1100,280" fill="none" stroke="#98a5b5" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<rect x="399.0" y="206" width="202" height="31" rx="8" fill="#ffffff" stroke="#98a5b5" stroke-width="1"/>
+<text x="500" y="228" font-size="17" style="fill:#98a5b5" text-anchor="middle" font-weight="400">172.20.20.0/30</text>
+<rect x="999.0" y="206" width="202" height="31" rx="8" fill="#ffffff" stroke="#98a5b5" stroke-width="1"/>
+<text x="1100" y="228" font-size="17" style="fill:#98a5b5" text-anchor="middle" font-weight="400">172.20.20.4/30</text>
+<text x="645" y="177" font-size="18" style="fill:#62738a" text-anchor="start" font-weight="400">Внешние линки вне OSPF</text>
+<text x="645" y="205" font-size="17" style="fill:#62738a" text-anchor="start" font-weight="400">Статические default на R14/R15</text>
+<text x="520" y="263" font-size="16" style="fill:#62738a" text-anchor="start" font-weight="400">e0/2</text>
+<text x="1120" y="263" font-size="16" style="fill:#62738a" text-anchor="start" font-weight="400">e0/2</text>
+<rect x="350" y="275" width="900" height="150" rx="22" fill="#eaf1ff" stroke="#b7cdf6" stroke-width="2"/>
+<rect x="310" y="450" width="980" height="430" rx="22" fill="#e8f6f1" stroke="#b2dbcf" stroke-width="2"/>
+<rect x="35" y="280" width="250" height="600" rx="22" fill="#fff4df" stroke="#ecd2a8" stroke-width="2"/>
+<rect x="1315" y="280" width="250" height="600" rx="22" fill="#f4edfc" stroke="#d6c1e9" stroke-width="2"/>
+<text x="800" y="301" font-size="21" style="fill:#2563eb" text-anchor="middle" font-weight="700">AREA 0 · BACKBONE</text>
+<text x="160" y="316" font-size="23" style="fill:#a66512" text-anchor="middle" font-weight="700">AREA 101</text>
+<text x="160" y="345" font-size="18" style="fill:#a66512" text-anchor="middle" font-weight="400">Totally stubby</text>
+<text x="1440" y="316" font-size="23" style="fill:#8655b7" text-anchor="middle" font-weight="700">AREA 102</text>
+<text x="1440" y="345" font-size="18" style="fill:#8655b7" text-anchor="middle" font-weight="400">Normal + фильтр</text>
+<polyline points="630,340 970,340" fill="none" stroke="#2563eb" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="370,370 160,370 160,590" fill="none" stroke="#a66512" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1230,370 1440,370 1440,590" fill="none" stroke="#8655b7" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="450,400 450,700" fill="none" stroke="#188876" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1150,400 1150,700" fill="none" stroke="#188876" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="550,400 1050,700" fill="none" stroke="#188876" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1050,400 550,700" fill="none" stroke="#e8f6f1" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1050,400 550,700" fill="none" stroke="#188876" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="695.0" y="320" width="210" height="31" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="800" y="342" font-size="17" style="fill:#2563eb" text-anchor="middle" font-weight="400">10.10.200.88/30</text>
+<text x="650" y="327" font-size="16" style="fill:#2563eb" text-anchor="start" font-weight="400">e1/0</text>
+<text x="950" y="327" font-size="16" style="fill:#2563eb" text-anchor="end" font-weight="400">e1/0</text>
+<text x="800" y="389" font-size="15" style="fill:#2563eb" text-anchor="middle" font-weight="700">НОВЫЙ ПРЯМОЙ ЛИНК</text>
+<rect x="51.0" y="466" width="218" height="31" rx="8" fill="#ffffff" stroke="#a66512" stroke-width="1"/>
+<text x="160" y="488" font-size="17" style="fill:#a66512" text-anchor="middle" font-weight="400">10.10.200.76/30</text>
+<rect x="1331.0" y="466" width="218" height="31" rx="8" fill="#ffffff" stroke="#8655b7" stroke-width="1"/>
+<text x="1440" y="488" font-size="17" style="fill:#8655b7" text-anchor="middle" font-weight="400">10.10.200.72/30</text>
+<rect x="344.0" y="515" width="212" height="31" rx="8" fill="#ffffff" stroke="#188876" stroke-width="1"/>
+<text x="450" y="537" font-size="17" style="fill:#188876" text-anchor="middle" font-weight="400">10.10.200.64/30</text>
+<rect x="1044.0" y="515" width="212" height="31" rx="8" fill="#ffffff" stroke="#188876" stroke-width="1"/>
+<text x="1150" y="537" font-size="17" style="fill:#188876" text-anchor="middle" font-weight="400">10.10.200.68/30</text>
+<rect x="587.0" y="467" width="212" height="31" rx="8" fill="#ffffff" stroke="#188876" stroke-width="1"/>
+<text x="693" y="489" font-size="17" style="fill:#188876" text-anchor="middle" font-weight="400">10.10.200.84/30</text>
+<rect x="589.0" y="627" width="212" height="31" rx="8" fill="#ffffff" stroke="#188876" stroke-width="1"/>
+<text x="695" y="649" font-size="17" style="fill:#188876" text-anchor="middle" font-weight="400">10.10.200.80/30</text>
+<text x="423" y="430" font-size="16" style="fill:#188876" text-anchor="middle" font-weight="400">e0/0</text>
+<text x="565" y="427" font-size="16" style="fill:#188876" text-anchor="middle" font-weight="400">e0/1</text>
+<text x="1035" y="427" font-size="16" style="fill:#188876" text-anchor="middle" font-weight="400">e0/1</text>
+<text x="1180" y="430" font-size="16" style="fill:#188876" text-anchor="middle" font-weight="400">e0/0</text>
+<text x="421" y="688" font-size="16" style="fill:#188876" text-anchor="middle" font-weight="400">e0/2</text>
+<text x="582" y="688" font-size="16" style="fill:#188876" text-anchor="middle" font-weight="400">e0/3</text>
+<text x="1022" y="688" font-size="16" style="fill:#188876" text-anchor="middle" font-weight="400">e0/3</text>
+<text x="1180" y="688" font-size="16" style="fill:#188876" text-anchor="middle" font-weight="400">e0/2</text>
+<text x="327" y="357" font-size="16" style="fill:#a66512" text-anchor="middle" font-weight="400">e0/3</text>
+<text x="1270" y="357" font-size="16" style="fill:#8655b7" text-anchor="middle" font-weight="400">e0/3</text>
+<text x="178" y="575" font-size="16" style="fill:#a66512" text-anchor="start" font-weight="400">e0/0</text>
+<text x="1458" y="575" font-size="16" style="fill:#8655b7" text-anchor="start" font-weight="400">e0/0</text>
+<rect x="370" y="280" width="260" height="120" rx="15" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<text x="392" y="316" font-size="29" style="fill:#162a43" text-anchor="start" font-weight="700">R14</text>
+<text x="607" y="316" font-size="18" style="fill:#2563eb" text-anchor="end" font-weight="700">ABR</text>
+<text x="500" y="349" font-size="18" style="fill:#162a43" text-anchor="middle" font-weight="400">Lo0  10.10.255.14/32</text>
+<text x="500" y="377" font-size="17" style="fill:#62738a" text-anchor="middle" font-weight="400">RID  14.14.14.14</text>
+<rect x="970" y="280" width="260" height="120" rx="15" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<text x="992" y="316" font-size="29" style="fill:#162a43" text-anchor="start" font-weight="700">R15</text>
+<text x="1207" y="316" font-size="18" style="fill:#2563eb" text-anchor="end" font-weight="700">ABR</text>
+<text x="1100" y="349" font-size="18" style="fill:#162a43" text-anchor="middle" font-weight="400">Lo0  10.10.255.15/32</text>
+<text x="1100" y="377" font-size="17" style="fill:#62738a" text-anchor="middle" font-weight="400">RID  15.15.15.15</text>
+<rect x="30" y="590" width="260" height="120" rx="15" fill="#ffffff" stroke="#a66512" stroke-width="3"/>
+<text x="52" y="626" font-size="29" style="fill:#162a43" text-anchor="start" font-weight="700">R19</text>
+<text x="267" y="626" font-size="18" style="fill:#a66512" text-anchor="end" font-weight="700">Area 101</text>
+<text x="160" y="659" font-size="18" style="fill:#162a43" text-anchor="middle" font-weight="400">Lo0  10.10.255.19/32</text>
+<text x="160" y="687" font-size="17" style="fill:#62738a" text-anchor="middle" font-weight="400">RID  19.19.19.19</text>
+<rect x="1310" y="590" width="260" height="120" rx="15" fill="#ffffff" stroke="#8655b7" stroke-width="3"/>
+<text x="1332" y="626" font-size="29" style="fill:#162a43" text-anchor="start" font-weight="700">R20</text>
+<text x="1547" y="626" font-size="18" style="fill:#8655b7" text-anchor="end" font-weight="700">Area 102</text>
+<text x="1440" y="659" font-size="18" style="fill:#162a43" text-anchor="middle" font-weight="400">Lo0  10.10.255.20/32</text>
+<text x="1440" y="687" font-size="17" style="fill:#62738a" text-anchor="middle" font-weight="400">RID  20.20.20.20</text>
+<rect x="370" y="700" width="260" height="120" rx="15" fill="#ffffff" stroke="#188876" stroke-width="3"/>
+<text x="392" y="736" font-size="29" style="fill:#162a43" text-anchor="start" font-weight="700">R12</text>
+<text x="607" y="736" font-size="18" style="fill:#188876" text-anchor="end" font-weight="700">Area 10</text>
+<text x="500" y="769" font-size="18" style="fill:#162a43" text-anchor="middle" font-weight="400">Lo0  10.10.255.12/32</text>
+<text x="500" y="797" font-size="17" style="fill:#62738a" text-anchor="middle" font-weight="400">RID  12.12.12.12</text>
+<rect x="970" y="700" width="260" height="120" rx="15" fill="#ffffff" stroke="#188876" stroke-width="3"/>
+<text x="992" y="736" font-size="29" style="fill:#162a43" text-anchor="start" font-weight="700">R13</text>
+<text x="1207" y="736" font-size="18" style="fill:#188876" text-anchor="end" font-weight="700">Area 10</text>
+<text x="1100" y="769" font-size="18" style="fill:#162a43" text-anchor="middle" font-weight="400">Lo0  10.10.255.13/32</text>
+<text x="1100" y="797" font-size="17" style="fill:#62738a" text-anchor="middle" font-weight="400">RID  13.13.13.13</text>
+<text x="800" y="735" font-size="27" style="fill:#188876" text-anchor="middle" font-weight="700">AREA 10</text>
+<text x="800" y="765" font-size="21" style="fill:#188876" text-anchor="middle" font-weight="700">STUB</text>
+<text x="800" y="800" font-size="18" style="fill:#188876" text-anchor="middle" font-weight="400">2 default · ECMP</text>
+<text x="800" y="854" font-size="19" style="fill:#188876" text-anchor="middle" font-weight="400">O + O IA + O*IA default от двух ABR</text>
+<text x="160" y="750" font-size="21" style="fill:#a66512" text-anchor="middle" font-weight="700">Только default</text>
+<text x="160" y="781" font-size="18" style="fill:#a66512" text-anchor="middle" font-weight="400">O*IA 0.0.0.0/0</text>
+<text x="160" y="812" font-size="18" style="fill:#a66512" text-anchor="middle" font-weight="400">через R14</text>
+<text x="1440" y="745" font-size="18" style="fill:#8655b7" text-anchor="middle" font-weight="700">На R15: Type 3 in</text>
+<text x="1440" y="775" font-size="16" style="fill:#8655b7" text-anchor="middle" font-weight="400">deny 10.10.200.76/30</text>
+<text x="1440" y="801" font-size="16" style="fill:#8655b7" text-anchor="middle" font-weight="400">deny 10.10.255.19/32</text>
+<text x="1440" y="836" font-size="17" style="fill:#8655b7" text-anchor="middle" font-weight="400">На R20 default нет</text>
+<rect x="310" y="910" width="980" height="390" rx="22" fill="#f0f3f7" stroke="#d3dae4" stroke-width="2"/>
+<text x="55" y="958" font-size="18" style="fill:#62738a" text-anchor="start" font-weight="700">НИЖНЯЯ ЧАСТЬ</text>
+<text x="55" y="986" font-size="18" style="fill:#62738a" text-anchor="start" font-weight="700">МОСКВЫ</text>
+<text x="55" y="1020" font-size="17" style="fill:#62738a" text-anchor="start" font-weight="400">Вне текущего OSPF</text>
+<polyline points="470,820 470,970 590,1010" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="530,820 530,900 1010,1010" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="1070,820 1070,900 590,1010" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="1130,820 1130,970 1010,1010" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="665,1000 935,1000" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="665,1020 935,1020" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="590,1037 590,1143" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="1010,1037 1010,1143" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="620,1037 980,1143" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="980,1037 620,1143" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<rect x="515" y="983" width="150" height="54" rx="10" fill="#ffffff" stroke="#a9b5c4" stroke-width="2"/>
+<text x="590" y="1017" font-size="22" style="fill:#64748b" text-anchor="middle" font-weight="700">SW4</text>
+<rect x="935" y="983" width="150" height="54" rx="10" fill="#ffffff" stroke="#a9b5c4" stroke-width="2"/>
+<text x="1010" y="1017" font-size="22" style="fill:#64748b" text-anchor="middle" font-weight="700">SW5</text>
+<rect x="515" y="1143" width="150" height="54" rx="10" fill="#ffffff" stroke="#a9b5c4" stroke-width="2"/>
+<text x="590" y="1177" font-size="22" style="fill:#64748b" text-anchor="middle" font-weight="700">SW3</text>
+<rect x="935" y="1143" width="150" height="54" rx="10" fill="#ffffff" stroke="#a9b5c4" stroke-width="2"/>
+<text x="1010" y="1177" font-size="22" style="fill:#64748b" text-anchor="middle" font-weight="700">SW2</text>
+<polyline points="590,1197 590,1230" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<polyline points="1010,1197 1010,1230" fill="none" stroke="#98a5b5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 8"/>
+<rect x="515" y="1228" width="150" height="54" rx="10" fill="#ffffff" stroke="#a9b5c4" stroke-width="2"/>
+<text x="590" y="1262" font-size="22" style="fill:#64748b" text-anchor="middle" font-weight="700">VPC1</text>
+<rect x="935" y="1228" width="150" height="54" rx="10" fill="#ffffff" stroke="#a9b5c4" stroke-width="2"/>
+<text x="1010" y="1262" font-size="22" style="fill:#64748b" text-anchor="middle" font-weight="700">VPC7</text>
+<rect x="635" y="1073" width="330" height="57" rx="8" fill="#f0f3f7" stroke="none" stroke-width="2"/>
+<text x="800" y="1097" font-size="18" style="fill:#62738a" text-anchor="middle" font-weight="400">Area 10 будет расширена</text>
+<text x="800" y="1121" font-size="18" style="fill:#62738a" text-anchor="middle" font-weight="400">до границы L2/L3</text>
+<text x="55" y="1350" font-size="19" style="fill:#162a43" text-anchor="start" font-weight="700">КАК ЧИТАТЬ СХЕМУ</text>
+<text x="55" y="1384" font-size="19" style="fill:#62738a" text-anchor="start" font-weight="400">Цвет линка = область обоих интерфейсов. ABR участвует в нескольких областях.</text>
+<text x="55" y="1417" font-size="19" style="fill:#62738a" text-anchor="start" font-weight="400">Все цветные линки: /30 · point-to-point · cost 10. Все loopback: /32 · cost 1.</text>
+<text x="55" y="1450" font-size="18" style="fill:#62738a" text-anchor="start" font-weight="400">Пересечения без узла не соединены. Масштаб условный; адреса концов приведены в README.</text>
+</svg>
