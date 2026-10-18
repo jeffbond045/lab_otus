@@ -48,6 +48,46 @@ Et0/3        1     101             10.10.200.78/30    10    P2P   1/1
 
 ## R15 — ABR и фильтрация
 
+Из show ip ospf
+```text
+It is an area border router
+Area BACKBONE(0)
+        Number of interfaces in this area is 2 (1 loopback)
+        Area has no authentication
+        SPF algorithm last executed 01:52:43.336 ago
+        SPF algorithm executed 4 times
+        Area ranges are
+           10.10.200.0/24 Active(10) Advertise 
+           10.10.255.0/24 Active(1) Advertise 
+        Number of LSA 18. Checksum Sum 0x094218
+        Number of opaque link LSA 0. Checksum Sum 0x000000
+        Number of DCbitless LSA 0
+        Number of indication LSA 0
+        Number of DoNotAge LSA 0
+        Flood list length 0
+    Area 10
+        Number of interfaces in this area is 2
+        It is a stub area
+        Generates stub default route with cost 1
+        Area has no authentication
+        SPF algorithm last executed 01:52:43.336 ago
+        SPF algorithm executed 5 times
+        Area ranges are
+        Number of LSA 18. Checksum Sum 0x0A920C
+        Number of opaque link LSA 0. Checksum Sum 0x000000
+        Number of DCbitless LSA 0
+        Number of indication LSA 0
+        Number of DoNotAge LSA 0
+        Flood list length 0
+    Area 102
+        Number of interfaces in this area is 1
+        Area has no authentication
+        SPF algorithm last executed 01:52:43.336 ago
+        SPF algorithm executed 4 times
+        Area ranges are
+        Area-filter FILTER_IP_FROM_AREA101 in
+```
+
 Из show ip ospf для area 102:
 
 ```text
