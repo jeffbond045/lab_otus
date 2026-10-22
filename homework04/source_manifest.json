@@ -1,0 +1,31 @@
+{
+  "report_date": "2026-10-22",
+  "files": [
+    {
+      "name": "Вставленный текст(2).txt",
+      "sha256": "544ef217a5e9958375f3e647c5bc253c5039bd3514acc01de522c1452f7e3e45"
+    },
+    {
+      "name": "Вставленный текст(1).txt",
+      "sha256": "9407346bec299463f55620d8eff97d8c7d91859e3394c362179da7b69b67631e"
+    },
+    {
+      "name": "Вставленный текст (2).txt",
+      "sha256": "54ca34219436d176397043edf46741dd3fecf20e28eb9e38bffa064fc15f61c3"
+    },
+    {
+      "name": "Вставленный текст (3).txt",
+      "sha256": "9ab53ce0405e05d5df62143c169b62993ba9f7599aae6301560a43f88773c65f"
+    },
+    {
+      "name": "2020-02(2).unl",
+      "sha256": "9e81c274d6f25bb4f6594b10bfcf7cc76f3208245b009aa5bde4224f1d38682e"
+    },
+    {
+      "name": "image(20261021-220341).png",
+      "sha256": "55ba3e4d09fd7ee65afc3e345e7beca0d2686a29cef015f759628b2042e76a51"
+    }
+  ],
+  "supplement": "R24 IPv6 ping: separate user message, transcribed into evidence/R24_ipv6_ping_from_chat.txt",
+  "config_transform": "Only username credential line replaced by a comment; original lab not modified."
+}
