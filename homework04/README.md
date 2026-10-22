@@ -288,15 +288,14 @@ I2  FD24:9147:592F:5002::23/128 [115/20]
 | [configs/R24.cfg](configs/R24.cfg) | Конфигурация R24 из config id=24 |
 | [configs/R25.cfg](configs/R25.cfg) | Конфигурация R25 из config id=25 |
 | [configs/R26.cfg](configs/R26.cfg) | Конфигурация R26 из config id=26 |
-| [evidence/R23_show_and_ping.txt](evidence/R23_show_and_ping.txt) | Исходные выводы R23: Вставленный текст(2).txt |
-| [evidence/R24_show_and_ping.txt](evidence/R24_show_and_ping.txt) | Исходные выводы R24: Вставленный текст(1).txt |
-| [evidence/R25_show_and_ping.txt](evidence/R25_show_and_ping.txt) | Исходные выводы R25: Вставленный текст (2).txt |
-| [evidence/R26_show_and_ping.txt](evidence/R26_show_and_ping.txt) | Исходные выводы R26: Вставленный текст (3).txt |
-| [evidence/R24_ipv6_ping_from_chat.txt](evidence/R24_ipv6_ping_from_chat.txt) | Дополнительные IPv6-ping R24 из сообщения |
+| [evidence/R23_show_and_ping.txt](evidence/R23_show_and_ping.txt) | Исходные выводы R23|
+| [evidence/R24_show_and_ping.txt](evidence/R24_show_and_ping.txt) | Исходные выводы R24|
+| [evidence/R25_show_and_ping.txt](evidence/R25_show_and_ping.txt) | Исходные выводы R25|
+| [evidence/R26_show_and_ping.txt](evidence/R26_show_and_ping.txt) | Исходные выводы R26|
 | [scripts/generate_ula.py](scripts/generate_ula.py) | Генератор нового ULA-префикса, не для перенумерации текущей лабы |
 
 
-## 11. Справочные материалы
+## 10. Справочные материалы
 
 - [RFC 4193 — Unique Local IPv6 Unicast Addresses](https://www.rfc-editor.org/rfc/rfc4193.html): формат ULA и случайный Global ID.
 - [RFC 6164 — Using 127-Bit IPv6 Prefixes on Inter-Router Links](https://www.rfc-editor.org/rfc/rfc6164.html): применение `/127` на межмаршрутизаторных соединениях.
