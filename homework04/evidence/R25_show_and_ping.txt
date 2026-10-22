@@ -1,0 +1,283 @@
+R25#show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                10.50.200.78    YES NVRAM  up                    up      
+Ethernet0/1                172.20.20.37    YES NVRAM  up                    up      
+Ethernet0/2                10.50.200.70    YES NVRAM  up                    up      
+Ethernet0/3                172.20.20.33    YES NVRAM  up                    up      
+Ethernet1/0                unassigned      YES NVRAM  administratively down down    
+Ethernet1/1                unassigned      YES NVRAM  administratively down down    
+Ethernet1/2                unassigned      YES NVRAM  administratively down down    
+Ethernet1/3                unassigned      YES NVRAM  administratively down down    
+Loopback0                  10.50.255.25    YES NVRAM  up                    up      
+R25#
+R25#show ipv6 interface brief
+Ethernet0/0            [up/up]
+    FE80::A8BB:CCFF:FE01:9000
+    FD24:9147:592F:5001::1
+Ethernet0/1            [up/up]
+    unassigned
+Ethernet0/2            [up/up]
+    FE80::A8BB:CCFF:FE01:9020
+    FD24:9147:592F:5001::5
+Ethernet0/3            [up/up]
+    unassigned
+Ethernet1/0            [administratively down/down]
+    unassigned
+Ethernet1/1            [administratively down/down]
+    unassigned
+Ethernet1/2            [administratively down/down]
+    unassigned
+Ethernet1/3            [administratively down/down]
+    unassigned
+Loopback0              [up/up]
+    FE80::A8BB:CCFF:FE01:9000
+    FD24:9147:592F:5002::25
+R25#
+R25#show clns protocol
+
+IS-IS Router: TRIADA
+  System Id: 0100.5025.5025.00  IS-Type: level-2
+  Manual area address(es): 
+        49.2222
+  Routing for area address(es): 
+        49.2222
+  Interfaces supported by IS-IS:
+        Ethernet0/2 - IP - IPv6
+        Ethernet0/0 - IP - IPv6
+  Passive interface: 
+        Loopback0
+  Redistribute:
+    static (on by default)
+  Distance for L2 CLNS routes: 110
+  RRR level: none
+  Generate narrow metrics: none
+  Accept narrow metrics:   none
+  Generate wide metrics:   level-1-2
+  Accept wide metrics:     level-1-2
+R25#
+R25#show clns neighbors detail
+Tag TRIADA:
+System Id      Interface   SNPA                State  Holdtime  Type Protocol
+R23            Et0/0       aabb.cc01.7010      Up     26        L2   M-ISIS
+  Area Address(es): 49.2222
+  IP Address(es):  10.50.200.77*
+  IPv6 Address(es): FE80::A8BB:CCFF:FE01:7010
+  Uptime: 00:11:54
+  NSF capable
+  Topology: IPv4, IPv6
+  Interface name: Ethernet0/0
+R26            Et0/2       aabb.cc01.a020      Up     24        L2   M-ISIS
+  Area Address(es): 49.0026
+  IP Address(es):  10.50.200.69*
+  IPv6 Address(es): FE80::A8BB:CCFF:FE01:A020
+  Uptime: 00:11:49
+  NSF capable
+  Topology: IPv4, IPv6
+  Interface name: Ethernet0/2
+R25#
+R25#show isis database detail
+
+Tag TRIADA:
+IS-IS Level-2 Link State Database:
+LSPID                 LSP Seq Num  LSP Checksum  LSP Holdtime      ATT/P/OL
+R23.00-00             0x00000005   0x7AB4        486               0/0/0
+  Area Address: 49.2222
+  Topology:     IPv4 (0x0) 
+                IPv6 (0x2) 
+  NLPID:        0xCC 0x8E 
+  Hostname: R23
+  IP Address:   10.50.255.23
+  IPv6 Address: FD24:9147:592F:5002::23
+  Metric: 10         IS-Extended R24.00
+  Metric: 10         IS-Extended R25.00
+  Metric: 10         IS (MT-IPv6) R24.00
+  Metric: 10         IS (MT-IPv6) R25.00
+  Metric: 10         IP 10.50.200.72/30
+  Metric: 10         IP 10.50.200.76/30
+  Metric: 0          IP 10.50.255.23/32
+  Metric: 10         IPv6 (MT-IPv6) FD24:9147:592F:5001::/127
+  Metric: 10         IPv6 (MT-IPv6) FD24:9147:592F:5001::2/127
+  Metric: 0          IPv6 (MT-IPv6) FD24:9147:592F:5002::23/128
+R24.00-00             0x00000004   0xCD82        489               0/0/0
+  Area Address: 49.0024
+  Topology:     IPv4 (0x0) 
+                IPv6 (0x2) 
+  NLPID:        0xCC 0x8E 
+  Hostname: R24
+  IP Address:   10.50.255.24
+  IPv6 Address: FD24:9147:592F:5002::24
+  Metric: 10         IS-Extended R23.00
+  Metric: 10         IS-Extended R26.00
+  Metric: 10         IS (MT-IPv6) R23.00
+  Metric: 10         IS (MT-IPv6) R26.00
+  Metric: 10         IP 10.50.200.64/30
+  Metric: 10         IP 10.50.200.72/30
+  Metric: 0          IP 10.50.255.24/32
+  Metric: 10         IPv6 (MT-IPv6) FD24:9147:592F:5001::6/127
+  Metric: 10         IPv6 (MT-IPv6) FD24:9147:592F:5001::2/127
+  Metric: 0          IPv6 (MT-IPv6) FD24:9147:592F:5002::24/128
+R25.00-00           * 0x00000004   0x73B2        490               0/0/0
+  Area Address: 49.2222
+  Topology:     IPv4 (0x0) 
+                IPv6 (0x2) 
+  NLPID:        0xCC 0x8E 
+  Hostname: R25
+  IP Address:   10.50.255.25
+  IPv6 Address: FD24:9147:592F:5002::25
+  Metric: 10         IS-Extended R23.00
+  Metric: 10         IS-Extended R26.00
+  Metric: 10         IS (MT-IPv6) R23.00
+  Metric: 10         IS (MT-IPv6) R26.00
+  Metric: 10         IP 10.50.200.68/30
+  Metric: 10         IP 10.50.200.76/30
+  Metric: 0          IP 10.50.255.25/32
+  Metric: 10         IPv6 (MT-IPv6) FD24:9147:592F:5001::/127
+  Metric: 10         IPv6 (MT-IPv6) FD24:9147:592F:5001::4/127
+  Metric: 0          IPv6 (MT-IPv6) FD24:9147:592F:5002::25/128
+R26.00-00             0x00000003   0x84C0        489               0/0/0
+  Area Address: 49.0026
+  Topology:     IPv4 (0x0) 
+                IPv6 (0x2) 
+  NLPID:        0xCC 0x8E 
+  Hostname: R26
+  IP Address:   10.50.255.26
+  IPv6 Address: FD24:9147:592F:5002::26
+  Metric: 10         IS-Extended R24.00
+  Metric: 10         IS-Extended R25.00
+  Metric: 10         IS (MT-IPv6) R24.00
+  Metric: 10         IS (MT-IPv6) R25.00
+  Metric: 10         IP 10.50.200.64/30
+  Metric: 10         IP 10.50.200.68/30
+  Metric: 0          IP 10.50.255.26/32
+  Metric: 10         IPv6 (MT-IPv6) FD24:9147:592F:5001::6/127
+  Metric: 10         IPv6 (MT-IPv6) FD24:9147:592F:5001::4/127
+  Metric: 0          IPv6 (MT-IPv6) FD24:9147:592F:5002::26/128
+R25#
+R25#show isis topology
+
+Tag TRIADA:
+
+IS-IS TID 0 paths to level-2 routers
+System Id            Metric     Next-Hop             Interface   SNPA
+R23                  10         R23                  Et0/0       aabb.cc01.7010 
+R24                  20         R23                  Et0/0       aabb.cc01.7010 
+                                R26                  Et0/2       aabb.cc01.a020 
+R25                  --
+R26                  10         R26                  Et0/2       aabb.cc01.a020 
+R25#
+R25#show isis ipv6 topology
+
+Tag TRIADA:
+
+IS-IS TID 2 paths to level-2 routers
+System Id            Metric     Next-Hop             Interface   SNPA
+R23                  10         R23                  Et0/0       aabb.cc01.7010 
+R24                  20         R23                  Et0/0       aabb.cc01.7010 
+                                R26                  Et0/2       aabb.cc01.a020 
+R25                  --
+R26                  10         R26                  Et0/2       aabb.cc01.a020 
+R25#
+R25#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 11 subnets, 2 masks
+S        10.40.255.27/32 [1/0] via 172.20.20.38
+i L2     10.50.200.64/30 [115/20] via 10.50.200.69, 00:11:41, Ethernet0/2
+C        10.50.200.68/30 is directly connected, Ethernet0/2
+L        10.50.200.70/32 is directly connected, Ethernet0/2
+i L2     10.50.200.72/30 [115/20] via 10.50.200.77, 00:11:51, Ethernet0/0
+C        10.50.200.76/30 is directly connected, Ethernet0/0
+L        10.50.200.78/32 is directly connected, Ethernet0/0
+i L2     10.50.255.23/32 [115/10] via 10.50.200.77, 00:11:51, Ethernet0/0
+i L2     10.50.255.24/32 [115/20] via 10.50.200.77, 00:11:41, Ethernet0/0
+                         [115/20] via 10.50.200.69, 00:11:41, Ethernet0/2
+C        10.50.255.25/32 is directly connected, Loopback0
+i L2     10.50.255.26/32 [115/10] via 10.50.200.69, 00:11:41, Ethernet0/2
+      172.20.0.0/16 is variably subnetted, 4 subnets, 2 masks
+C        172.20.20.32/30 is directly connected, Ethernet0/3
+L        172.20.20.33/32 is directly connected, Ethernet0/3
+C        172.20.20.36/30 is directly connected, Ethernet0/1
+L        172.20.20.37/32 is directly connected, Ethernet0/1
+S     192.168.30.0/23 [1/0] via 172.20.20.34
+R25#
+R25#show ipv6 route
+IPv6 Routing Table - default - 11 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP
+       H - NHRP, I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea
+       IS - ISIS summary, D - EIGRP, EX - EIGRP external, NM - NEMO
+       ND - ND Default, NDp - ND Prefix, DCE - Destination, NDr - Redirect
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2, la - LISP alt
+       lr - LISP site-registrations, ld - LISP dyn-eid, a - Application
+C   FD24:9147:592F:5001::/127 [0/0]
+     via Ethernet0/0, directly connected
+L   FD24:9147:592F:5001::1/128 [0/0]
+     via Ethernet0/0, receive
+I2  FD24:9147:592F:5001::2/127 [115/20]
+     via FE80::A8BB:CCFF:FE01:7010, Ethernet0/0
+C   FD24:9147:592F:5001::4/127 [0/0]
+     via Ethernet0/2, directly connected
+L   FD24:9147:592F:5001::5/128 [0/0]
+     via Ethernet0/2, receive
+I2  FD24:9147:592F:5001::6/127 [115/20]
+     via FE80::A8BB:CCFF:FE01:A020, Ethernet0/2
+I2  FD24:9147:592F:5002::23/128 [115/10]
+     via FE80::A8BB:CCFF:FE01:7010, Ethernet0/0
+I2  FD24:9147:592F:5002::24/128 [115/20]
+     via FE80::A8BB:CCFF:FE01:7010, Ethernet0/0
+     via FE80::A8BB:CCFF:FE01:A020, Ethernet0/2
+LC  FD24:9147:592F:5002::25/128 [0/0]
+     via Loopback0, receive
+I2  FD24:9147:592F:5002::26/128 [115/10]
+     via FE80::A8BB:CCFF:FE01:A020, Ethernet0/2
+L   FF00::/8 [0/0]
+     via Null0, receive
+R25#
+R25#ping 10.50.255.23 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.50.255.23, timeout is 2 seconds:
+Packet sent with a source address of 10.50.255.25 
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/5 ms
+R25#ping 10.50.255.24 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.50.255.24, timeout is 2 seconds:
+Packet sent with a source address of 10.50.255.25 
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
+R25#ping 10.50.255.26 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.50.255.26, timeout is 2 seconds:
+Packet sent with a source address of 10.50.255.25 
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
+R25#ping ipv6 FD24:9147:592F:5002::23 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to FD24:9147:592F:5002::23, timeout is 2 seconds:
+Packet sent with a source address of FD24:9147:592F:5002::25
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
+R25#ping ipv6 FD24:9147:592F:5002::24 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to FD24:9147:592F:5002::24, timeout is 2 seconds:
+Packet sent with a source address of FD24:9147:592F:5002::25
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/2 ms
+R25#ping ipv6 FD24:9147:592F:5002::26 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to FD24:9147:592F:5002::26, timeout is 2 seconds:
+Packet sent with a source address of FD24:9147:592F:5002::25
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
+R25#

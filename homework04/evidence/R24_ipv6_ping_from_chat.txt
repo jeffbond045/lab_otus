@@ -1,0 +1,18 @@
+R24#ping ipv6 FD24:9147:592F:5002::23 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to FD24:9147:592F:5002::23, timeout is 2 seconds:
+Packet sent with a source address of FD24:9147:592F:5002::24
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
+R24#ping ipv6 FD24:9147:592F:5002::25 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to FD24:9147:592F:5002::25, timeout is 2 seconds:
+Packet sent with a source address of FD24:9147:592F:5002::24
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/2 ms
+R24#ping ipv6 FD24:9147:592F:5002::26 source Loopback0
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to FD24:9147:592F:5002::26, timeout is 2 seconds:
+Packet sent with a source address of FD24:9147:592F:5002::24
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
